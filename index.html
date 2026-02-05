@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f4f9; color: #333; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: #2c3e50; color: white; padding: 1rem; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+        /* Hero Section */
+        header { height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1352&q=80'); background-size: cover; color: white; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        /* Container */
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; }
+        section { margin-bottom: 3rem; }
+        h2 { border-bottom: 3px solid #3498db; display: inline-block; margin-bottom: 20px; }
+
+        /* Projects Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+        .card h3 { color: #3498db; margin-bottom: 10px; }
+
+        /* Contact */
+        .contact-btn { background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+
+        footer { text-align: center; padding: 2rem; background: #2c3e50; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>Full Stack Developer | Designer | Problem Solver</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with experience in building modern web applications. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Project One</h3>
+                    <p>A short description of your awesome project and the tech stack used (e.g., React, Node.js).</p>
+                </div>
+                <div class="card">
+                    <h3>Project Two</h3>
+                    <p>Description of another project. Mention the key features and your role in development.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Three</h3>
+                    <p>Focus on results here—how did this project help users or solve a specific problem?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently looking for new opportunities. My inbox is always open!</p>
+            <br>
+            <a href="mailto:your@email.com" class="contact-btn">Email Me</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
